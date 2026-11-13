@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover premium fashion at LUXE.">
+  <title>ANJEL | Premium Fashion</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/design.css">
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT -->
+  <div class="announcement">
+    ✦ FREE SHIPPING ON ORDERS ABOVE ₹1,499 ✦
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="header">
+    <a href="#home" class="logo">ANJEL<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">Our Story</a>
+    </nav>
+
+    <div class="header-actions">
+      <label class="search-box">
+        <span>⌕</span>
+        <input type="search" id="searchInput" placeholder="Search here...">
+      </label>
+
+      <button class="header-icon" id="themeToggle" aria-label="Toggle theme">☀</button>
+      <button class="header-icon cart-trigger" id="cartButton" aria-label="Open shopping bag">
+        ♧ <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-background"></div>
+
+      <div class="hero-content">
+        <span class="eyebrow">THE ART OF DRESSING WELL</span>
+        <h1>Elegance is<br>always <span>in style.</span></h1>
+        <p>Discover a world of timeless fashion, thoughtfully selected for your everyday moments and extraordinary occasions.</p>
+
+        <div class="hero-actions">
+          <a href="#shop" class="gold-button">EXPLORE COLLECTION <span>↗</span></a>
+          <a href="#collections" class="text-link">Discover more ↓</a>
+        </div>
+
+        <div class="hero-note">
+          <span class="gold-line"></span>
+          <span>NEW SEASON · 2026 COLLECTION</span>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1200" alt="Luxury fashion editorial">
+        <div class="image-label">
+          <span>01 / 04</span>
+          <span>TIMELESS COLLECTION</span>
+        </div>
+      </div>
+
+      <div class="hero-side-text">LUXE · STYLE · CONFIDENCE</div>
+    </section>
+
+    <!-- BRAND STRIP -->
+    <section class="brand-strip">
+      <span>TIMELESS STYLE</span>
+      <span>✦</span>
+      <span>PREMIUM QUALITY</span>
+      <span>✦</span>
+      <span>MADE FOR YOU</span>
+      <span>✦</span>
+      <span>EVERYDAY LUXURY</span>
+    </section>
+
+    <!-- COLLECTIONS -->
+    <section class="collections section" id="collections">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">FIND YOUR SIGNATURE LOOK</span>
+          <h2>Explore our <span>collections.</span></h2>
+        </div>
+        <p>From everyday essentials to statement pieces, find something that feels like you.</p>
+      </div>
+
+      <div class="collection-grid">
+
+        <button class="collection-card collection-large" data-category="Women">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900" alt="Women's collection">
+          <span class="collection-number">01</span>
+          <div class="collection-caption">
+            <span>THE FEMININE EDIT</span>
+            <h3>Women</h3>
+            <span class="collection-arrow">↗</span>
+          </div>
+        </button>
+
+        <button class="collection-card" data-category="Men">
+          <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=800" alt="Men's collection">
+          <span class="collection-number">02</span>
+          <div class="collection-caption">
+            <span>THE MODERN EDIT</span>
+            <h3>Men</h3>
+            <span class="collection-arrow">↗</span>
+          </div>
+        </button>
+
+        <button class="collection-card" data-category="Accessories">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800" alt="Accessories collection">
+          <span class="collection-number">03</span>
+          <div class="collection-caption">
+            <span>THE FINISHING TOUCH</span>
+            <h3>Accessories</h3>
+            <span class="collection-arrow">↗</span>
+          </div>
+        </button>
+
+        <button class="collection-card" data-category="Footwear">
+          <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800" alt="Footwear collection">
+          <span class="collection-number">04</span>
+          <div class="collection-caption">
+            <span>STEP INTO STYLE</span>
+            <h3>Footwear</h3>
+            <span class="collection-arrow">↗</span>
+          </div>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- SHOP -->
+    <section class="shop section" id="shop">
+      <div class="section-heading shop-heading">
+        <div>
+          <span class="eyebrow">CURATED FOR YOUR WARDROBE</span>
+          <h2>The latest <span>edit.</span></h2>
+        </div>
+        <p>Pieces worth adding to your collection.</p>
+      </div>
+
+      <div class="shop-toolbar">
+        <div class="filter-list" id="filterList">
+          <button class="filter-btn active" data-filter="All">All pieces</button>
+          <button class="filter-btn" data-filter="Women">Women</button>
+          <button class="filter-btn" data-filter="Men">Men</button>
+          <button class="filter-btn" data-filter="Accessories">Accessories</button>
+          <button class="filter-btn" data-filter="Footwear">Footwear</button>
+        </div>
+
+        <span class="product-count" id="productCount">16 PRODUCTS</span>
+      </div>
+
+      <div class="products-grid" id="productGrid">
+
+        <!-- WOMEN -->
+        <article class="product-card" data-category="Women" data-name="Satin Evening Dress" data-price="2499">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=700" alt="Satin evening dress">
+            <span class="product-tag">BESTSELLER</span>
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>WOMEN · DRESSES</span>
+            <h3>Satin Evening Dress</h3>
+            <strong>₹2,499</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Women" data-name="Classic White Dress" data-price="1899">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=700" alt="Classic white dress">
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>WOMEN · DRESSES</span>
+            <h3>Classic White Dress</h3>
+            <strong>₹1,899</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Women" data-name="Minimal Chic Outfit" data-price="1599">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=700" alt="Chic outfit">
+            <span class="product-tag">NEW</span>
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>WOMEN · CASUAL</span>
+            <h3>Minimal Chic Outfit</h3>
+            <strong>₹1,599</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Women" data-name="Modern Floral Style" data-price="1799">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=700" alt="Floral fashion">
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>WOMEN · COLLECTION</span>
+            <h3>Modern Floral Style</h3>
+            <strong>₹1,799</strong>
+          </div>
+        </article>
+
+        <!-- MEN -->
+        <article class="product-card" data-category="Men" data-name="Premium Casual Shirt" data-price="1299">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?w=700" alt="Casual shirt">
+            <span class="product-tag">POPULAR</span>
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>MEN · SHIRTS</span>
+            <h3>Premium Casual Shirt</h3>
+            <strong>₹1,299</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Men" data-name="Urban Streetwear" data-price="1799">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=700" alt="Streetwear">
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>MEN · CASUAL</span>
+            <h3>Urban Streetwear</h3>
+            <strong>₹1,799</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Men" data-name="Classic Leather Jacket" data-price="3299">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=700" alt="Leather jacket">
+            <span class="product-tag">PREMIUM</span>
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>MEN · JACKETS</span>
+            <h3>Classic Leather Jacket</h3>
+            <strong>₹3,299</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Men" data-name="Everyday Denim" data-price="1499">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=700" alt="Denim">
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>MEN · DENIM</span>
+            <h3>Everyday Denim</h3>
+            <strong>₹1,499</strong>
+          </div>
+        </article>
+
+        <!-- ACCESSORIES -->
+        <article class="product-card" data-category="Accessories" data-name="Signature Handbag" data-price="2199">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=700" alt="Handbag">
+            <span class="product-tag">BESTSELLER</span>
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>ACCESSORIES · BAGS</span>
+            <h3>Signature Handbag</h3>
+            <strong>₹2,199</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Accessories" data-name="Golden Hour Sunglasses" data-price="899">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=700" alt="Sunglasses">
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>ACCESSORIES · EYEWEAR</span>
+            <h3>Golden Hour Sunglasses</h3>
+            <strong>₹899</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Accessories" data-name="Timeless Wrist Watch" data-price="2799">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=700" alt="Wrist watch">
+            <span class="product-tag">NEW</span>
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>ACCESSORIES · WATCHES</span>
+            <h3>Timeless Wrist Watch</h3>
+            <strong>₹2,799</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Accessories" data-name="Everyday Shoulder Bag" data-price="1699">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=700" alt="Shoulder bag">
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>ACCESSORIES · BAGS</span>
+            <h3>Everyday Shoulder Bag</h3>
+            <strong>₹1,699</strong>
+          </div>
+        </article>
+
+        <!-- FOOTWEAR -->
+        <article class="product-card" data-category="Footwear" data-name="Classic Sport Sneakers" data-price="1999">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700" alt="Sport sneakers">
+            <span class="product-tag">POPULAR</span>
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>FOOTWEAR · SNEAKERS</span>
+            <h3>Classic Sport Sneakers</h3>
+            <strong>₹1,999</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Footwear" data-name="Elegant Evening Heels" data-price="1799">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=700" alt="Evening heels">
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>FOOTWEAR · HEELS</span>
+            <h3>Elegant Evening Heels</h3>
+            <strong>₹1,799</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Footwear" data-name="Everyday Street Shoes" data-price="1499">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?w=700" alt="Everyday shoes">
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>FOOTWEAR · CASUAL</span>
+            <h3>Everyday Street Shoes</h3>
+            <strong>₹1,499</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Footwear" data-name="Premium White Sneakers" data-price="2299">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=700" alt="White sneakers">
+            <span class="product-tag">NEW</span>
+            <button class="quick-add" type="button">ADD TO BAG +</button>
+          </div>
+          <div class="product-details">
+            <span>FOOTWEAR · SNEAKERS</span>
+            <h3>Premium White Sneakers</h3>
+            <strong>₹2,299</strong>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="no-results" id="noResults" hidden>No matching products found.</p>
+    </section>
+
+    <!-- PROMO -->
+    <section class="promo" id="about">
+      <div class="promo-image">
+        <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=1000" alt="Fashion editorial">
+      </div>
+
+      <div class="promo-content">
+        <span class="eyebrow">A DIFFERENT KIND OF FASHION</span>
+        <h2>Designed for<br>your <span>own story.</span></h2>
+        <p>At LUXE, we believe personal style is more than what you wear. It's the confidence you carry and the story you choose to tell.</p>
+        <a href="#shop" class="gold-button">DISCOVER LUXE ↗</a>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits section">
+      <div class="benefit-card">
+        <span>✧</span>
+        <h3>Premium Selection</h3>
+        <p>Thoughtfully selected styles.</p>
+      </div>
+      <div class="benefit-card">
+        <span>♧</span>
+        <h3>Easy Shopping</h3>
+        <p>A smooth shopping experience.</p>
+      </div>
+      <div class="benefit-card">
+        <span>↺</span>
+        <h3>Easy Returns</h3>
+        <p>Simple return policy.</p>
+      </div>
+      <div class="benefit-card">
+        <span>♡</span>
+        <h3>Made With Care</h3>
+        <p>Fashion you'll love wearing.</p>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <span class="eyebrow">THE ANJEL LETTER</span>
+      <h2>A little luxury in your inbox.</h2>
+      <p>Sign up for new arrivals, exclusive updates and style inspiration.</p>
+
+      <form id="newsletterForm">
+        <input type="email" id="emailInput" placeholder="Your email address" required>
+        <button type="submit">JOIN US ↗</button>
+      </form>
+      <p id="newsletterMessage" aria-live="polite"></p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <a href="#home" class="logo">ANJEL<span>.</span></a>
+        <p>Wear your confidence. Own your style.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">Our Story</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 ANJEL. All rights reserved.</span>
+      <span>CRAFTED WITH STYLE ✦</span>
+    </div>
+  </footer>
+
+  <!-- CART -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-heading">
+      <div>
+        <span class="eyebrow">YOUR SELECTION</span>
+        <h2>Shopping bag</h2>
+      </div>
+      <button id="closeCart" class="close-cart" aria-label="Close cart">✕</button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Your shopping bag is empty.</p>
+    </div>
+
+    <div class="cart-summary">
+      <div class="total-line">
+        <span>Subtotal</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+      <p>Shipping calculated at checkout.</p>
+      <button id="checkoutButton" class="gold-button checkout-button">CONTINUE TO CHECKOUT ↗</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
